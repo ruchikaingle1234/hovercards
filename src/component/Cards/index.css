@@ -1,0 +1,481 @@
+body{
+    overflow: hidden;
+}
+
+.Cards-Container-body {
+    height: auto;
+    width: fit-content; 
+    margin-top: 20px;
+    display: flex;
+   
+    white-space: nowrap;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    position: absolute;
+    z-index: 3;
+  overflow: visible;
+}
+
+.Cards-Container-body::-webkit-scrollbar {
+    display: none;
+}
+@keyframes scroll-animation {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(calc(-2070px)); 
+    }
+}
+
+.Cards-Container {
+    position: relative; 
+    z-index: 2;
+    height: auto; 
+    border: 1px solid black;
+    border-radius: 10px;
+    flex: 1;
+    width: 361px;
+    max-width: 361px;
+    min-width: 361px;
+    margin-left: 10px;
+    padding: 15px 10px 10px 20px;
+    overflow: visible; 
+    animation: scroll-animation 20s linear infinite;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease;
+}
+
+.Cards-Container-body:hover .Cards-Container {
+    animation-play-state: paused;
+}
+
+.card-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.card-wrapper:hover .Cards-Container {
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    pointer-events: auto;
+}
+
+.card-wrapper:hover .hover-image {
+    display: block;
+}
+
+.hover-image {
+    z-index: 1; 
+    display: none; 
+    height: 450px; 
+    width: 350px;
+    position: absolute;
+    top: -70px;
+    left: 102%; 
+    border: 1px solid black; 
+    background-color: white; 
+    border-radius: 10px; 
+    transition: transform 0.3s ease;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    margin-left: 330px;
+    margin-top: 130px;
+    border-top: 20px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 30px solid white;
+
+    
+}
+
+
+.extra-info {
+    z-index: 1; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    overflow: visible;
+}
+
+.card-wrapper:hover .extra-info {
+    display: block;
+    opacity: 1;
+}
+
+.Buttons-container {
+    width: 48.31px;
+    height: 47px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-left: 50px;
+    background-color: white;
+   
+    
+}
+
+.button-control-div {
+    width: 100%;
+    margin-top: 400px;
+    display: flex;
+    justify-content: end;
+    position: fixed;
+   
+  
+   
+    
+}
+.paragraph {
+    white-space: normal;
+    font-size: 28px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.button-link {
+    width: 50px;
+    height: 46px;
+    border: 1px solid black;
+    border-radius: 24px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8px;
+    background-color: white;
+    margin-right: 15px;
+}
+
+.anchor-content {
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.Cardstitle-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.div-viewmore {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+}
+
+.anchor-viewmore {
+    text-decoration: none;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.para {
+    margin-top: -20px;
+}
+
+p {
+    font-weight: 500;
+    margin-top: -5px;
+}
+
+.head1 {
+    font-weight: 600;
+    justify-content: center;
+}
+
+.new {
+    white-space: normal;
+    font-size: 10px;
+}
+
+.title1 {
+    font-size: 15px;
+}
+
+.Cards-Container-body1 {
+    height: 380px;
+    width: 360px;
+    background-color: white;
+    border: 1px solid gray;
+   margin-top: -200px;
+   margin-left: 20px;
+   border-radius: 10px;
+}
+.para2 {
+    display: block;
+    padding: 10px;
+   text-align: justify;
+    width: 100%; 
+    max-width: 400px; 
+    font-size: 14px; 
+    line-height: 1.1em;
+    white-space: normal; 
+    overflow: hidden; 
+  
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-image1 {
+    height: 150px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+    border-radius: 20px;
+    z-index: 1;
+    pointer-events: none; 
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  background: black;
+    padding: 10px;
+   
+    z-index: 2; 
+    text-align: center; 
+}
+
+.t1 {
+    color:black; 
+    font-weight: bolder;
+    font-size: 22px;
+    margin-top:-40px; 
+    margin-left: 20px;
+    line-height: 1.25;
+}
+
+
+
+
+
+.item {
+  width: 200px;
+  height: 50px;
+    
+  
+}
+.p2{
+    font-size: 14px;
+}
+  
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+    width: 100%; 
+}
+
+.container > div {
+    flex: 1 1 calc(50% - 10px); 
+    box-shadow: 0 0 0 1px #dce1e5;
+    padding: 10px;
+    box-sizing: border-box; 
+    border-radius: 5px;
+
+}
+.enroll-buttn{
+height: 30px;
+width: 340px;
+margin-left: 10px;
+margin-top: 10px;
+background: #2c90e2;
+border-radius: 10px;
+color:white;
+border: none;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .Cards-Container {
+      width: 200px;
+      height: 200px;
+      max-width: 200px;
+      min-width: 200px;
+    }
+    .title1 {
+      display: block;
+    }
+    .title {
+    
+        font-size: 20px;
+    }
+    .paragraph {
+    
+      font-size: 10px; 
+      font-weight: 700;
+      
+      
+    }
+    .new {
+      display: block;
+    }
+    .Cards-Container-body {
+      height: 200px;
+    }
+    .head1 {
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .para1,
+    .para {
+      font-size: 8px;
+    }
+    .Buttons-container {
+      width: 47px;
+      height: 47px;
+    }
+    h6 {
+      padding-top: 8px;
+      font-size: 14px;
+    }
+    .Cards-Container-body1 {
+        height: 320px;
+        width: 260px;
+        margin-left: -200px;
+    }
+    .hover-image1 {
+        /* height: 100px;
+        width: 250px; */
+        display: none;
+    }
+   .para2{
+    font-size: 8px;
+   }
+   .item {
+    width: 200px;
+    height: 40px;
+      
+    
+  }
+  .p2{
+      font-size: 10px;
+  }
+    
+  .container {
+      display: flex;
+      flex-wrap: wrap; 
+      gap: 10px; 
+      width: 100%; 
+  }
+  
+  .container > div {
+      flex: 1 1 calc(50% - 10px); 
+      box-shadow: 0 0 0 1px #dce1e5;
+      padding: 10px;
+      box-sizing: border-box; 
+      border-radius: 5px;
+  
+  }
+
+  .enroll-buttn{
+  
+width: 220px;
+  }
+  @keyframes scroll-animation {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(calc(-1170px)); 
+    }
+}
+
+   
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+    .new,
+    .title1 {
+      display: none;
+    }
+  
+    
+}
+
+h6 {
+    padding-top: 5px;
+}
+
+@media only screen and (width: 320px), only screen and (width: 375px) {
+    h6 {
+      padding-top: 8px;
+      font-size: 12px;
+    }
+    .title{
+        font-size: 14px;
+    }
+    .paragraph
+    {
+        font-size: 10px;
+    }
+
+    .button-link,
+    .Buttons-container {
+      width: 40px;
+      height: 38px;
+      border-radius: 24px;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 8px;
+      background-color: white;
+      margin-right: 15px;
+      border: 1px solid black;
+    }
+    .Cards-Container-body1 {
+        height: 320px;
+        width: 240px;
+        margin-left: -200px;
+    }
+    @keyframes scroll-animation {
+        from {
+            transform: translateX(0%);
+        }
+        to {
+            transform: translateX(calc(-1570px)); 
+        }
+    }
+}
+

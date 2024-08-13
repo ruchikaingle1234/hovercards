@@ -1,0 +1,348 @@
+.Cards-body {
+    height: 100vh;
+    width: 100%;
+
+}
+
+.Cards-Container-body {
+    height: 365px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
+
+    -webkit-scrollbar {
+        display: none;
+    }
+
+    scrollbar-width: none;
+}
+
+@keyframes scroll-animation {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.Cards-Container {
+    height: 359px;
+    border: 1px solid black;
+    border-radius: 10px;
+    flex: 1;
+    width: 361px;
+    max-width: 361px;
+    min-width: 361px;
+    margin-left: 10px;
+    padding: 15px 10px 10px 20px;
+    animation: scroll-animation 12s linear infinite;
+    cursor: pointer;
+}
+
+
+.Cards-Container:hover{
+    animation-play-state: paused;
+}
+
+.Cards-Container:hover,
+.Buttons-container:hover,
+.button-link:hover {
+    background-color: #ececec;
+   
+}
+
+.Buttons-container {
+    width: 48.31px;
+    height: 47px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-left: 50px;
+    background-color: white;
+
+}
+
+
+.button-control-div {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+
+}
+
+@media only screen and (max-width:768px) {
+    .Cards-Container {
+        width: 200px;
+        height: 200px;
+        max-width: 200px;
+        min-width: 200px;
+    }
+
+    .title1 {
+
+        display: block;
+
+    }
+
+    .title {
+        display: none;
+    }
+
+    .paragraph {
+        display: none;
+    }
+
+    .new {
+        display: block;
+    }
+
+    .Cards-Container-body {
+        height: 200px;
+    }
+
+    .head1 {
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .para1 {
+        font-size: 8px;
+
+    }
+
+    .para {
+        font-size: 8px;
+
+    }
+
+    .Buttons-container {
+        width: 47px;
+        height: 47px;
+
+    }
+
+    h6 {
+        padding-top: 8px;
+        font-size: 14px;
+    }
+
+    .Cards-Container:hover,
+    .Buttons-container:hover,
+    .button-link:hover {
+        background-color: #ececec;
+    }
+
+
+}
+
+.paragraph {
+    text-wrap: wrap;
+    font-size: 28px;
+    margin-top: 20px;
+    font-weight: 400px;
+
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+
+
+}
+
+.button-link {
+    width: 50px;
+    height: 46px;
+    border: 1px solid black;
+    border-radius: 24px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8px;
+    background-color: white;
+    margin-right: 15px;
+
+}
+
+.anchor-content {
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.Cardstitle-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-viewmore {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+
+}
+
+.anchor-viewmore {
+    text-decoration: none;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.para {
+
+    margin-top: -20px;
+}
+
+p {
+    font-weight: 500;
+    margin-top: -5px;
+}
+
+.head1 {
+    font-weight: 600;
+    justify-content: center;
+
+}
+
+.new {
+    text-wrap: wrap;
+    font-size: 10px;
+}
+
+.title1 {
+    font-size: 15px;
+
+}
+
+@media only screen and (min-width:1024px) {
+
+    .new {
+        background-color: blue;
+        display: none;
+    }
+
+    .title1 {
+        display: none;
+
+    }
+
+    .Cards-Container:hover,
+    .Buttons-container:hover,
+    .button-link:hover {
+        background-color: #ececec;
+    }
+
+
+
+
+}
+
+h6 {
+    padding-top: 5px;
+}
+
+@media only screen and (width:320px) {
+
+
+    h6 {
+        padding-top: 8px;
+        font-size: 12px;
+    }
+
+    .button-link {
+        width: 40px;
+        height: 38px;
+        border: 1px solid black;
+        border-radius: 24px;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 8px;
+        background-color: white;
+        margin-right: 15px;
+
+    }
+
+    .Buttons-container {
+        width: 40px;
+        height: 38px;
+        border-radius: 50%;
+        border: 2px solid black;
+        margin-left: 50px;
+        background-color: white;
+
+    }
+
+    .Cards-Container:hover,
+    .Buttons-container:hover,
+    .button-link:hover {
+        background-color: #ececec;
+    }
+
+
+}
+
+@media only screen and (width:375px) {
+
+
+
+    .button-link {
+        width: 40px;
+        height: 38px;
+        border: 1px solid black;
+        border-radius: 24px;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 8px;
+        background-color: white;
+        margin-right: 15px;
+
+    }
+
+    .Buttons-container {
+        width: 40px;
+        height: 38px;
+        border-radius: 50%;
+        border: 2px solid black;
+        margin-left: 50px;
+        background-color: white;
+
+    }
+
+    .Cards-Container:hover,
+    .Buttons-container:hover,
+    .button-link:hover {
+        background-color: #ececec;
+    }
+
+}
+
+.pyara1 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    display: none;
+
+}
+.paragraph:hover{
+  
+    display: block;
+}
